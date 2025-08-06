@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehul Gupta | Portfolio</title>
+    <style>
+        /* --- General Styling --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* --- Links --- */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* --- Header & Profile --- */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .profile-info {
+             display: flex;
+             align-items: center;
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #007bff;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #212529;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.9em;
+        }
+
+        /* --- Sections --- */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #007bff;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        /* --- Projects --- */
+        .project {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .project h3 {
+            margin-top: 0;
+            font-size: 1.4em;
+            color: #343a40;
+        }
+
+        .project .tools {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        /* --- Skills --- */
+        .skills-list {
+            padding-left: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list li {
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .skills-list li:hover {
+            background-color: #007bff;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        h4 {
+            font-size: 1.1em;
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            color: #6c757d;
+            font-size: 0.9em;
+            height: 20px; /* Adjusted height after removing text */
+        }
+        
+        /* --- Responsive Design --- */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
+            .contact-info {
+                text-align: left;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="profile-info">
+                <img src="mehulphoto.jpg" alt="Photo of Mehul Gupta">
+                <h1>Mehul Gupta</h1>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:mehulg2005@gmail.com">mehulg2005@gmail.com</a> <br>
+                +91 8950326179 <br>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn Profile</a>
+            </div>
+        </header>
+
+        <main>
+            <section id="summary">
+                <h2>📝 Profile Summary</h2>
+                <p>
+                    Driven and detail-oriented Computer Science student with a strong foundation in C++, Java, Python, TypeScript, JavaScript, and SQL. I possess solid knowledge of object-oriented programming, data structures, and algorithm design. Experienced in building scalable and user-friendly applications using React.js, Flutter, and MongoDB. I am a quick learner with the ability to adapt to new technologies and thrive in fast-paced, ambiguous environments, and a strong communicator capable of explaining technical challenges and proposing actionable solutions.
+                </p>
+            </section>
+
+            <section id="education">
+                <h2>🎓 Education</h2>
+                <p>
+                    <b>Bennett University</b>, Greater Noida, Uttar Pradesh<br>
+                    B.Tech in Computer Science<br>
+                    Current CGPA: <b>7.8</b>
+                </p>
+            </section>
+
+            <section id="projects">
+                <h2>🚀 Projects</h2>
+                <div class="project">
+                    <h3>UniRyde</h3>
+                    <p class="tools"><b>Tools:</b> React.js, HTML, CSS, MongoDB, Google Maps API</p>
+                    <p>A revolutionary app that connects new students within the university to share cab expenses, making transportation more affordable. Students can easily find others traveling to similar destinations and split the cost.</p>
+                </div>
+                <div class="project">
+                    <h3>Ocasio (Startup)</h3>
+                    <p class="tools"><b>Tools:</b> Flutter, Firebase, Python</p>
+                    <p>A digital platform bringing together leading organizers, photographers, and event planners to make event planning stress-free. It integrates AI-driven functionalities, including personalized service recommendations and a chatbot for planning assistance.</p>
+                </div>
+                <div class="project">
+                    <h3>Premium-Payment-Prediction-System</h3>
+                    <p class="tools"><b>Tools:</b> Python (Pandas, NumPy, Scikit-learn)</p>
+                    <p>Built predictive models using Logistic Regression and Decision Trees to analyze historical payment data. The system delivers insights to help insurers identify at-risk customers and enhance retention strategies.</p>
+                </div>
+                <div class="project">
+                    <h3>Image Caption Generator</h3>
+                    <p class="tools"><b>Tools:</b> Python, TensorFlow, Flickr-8k Dataset</p>
+                    <p>Leveraged a pre-trained VGG16 model for feature extraction and an LSTM for caption generation. The platform processes uploaded images and displays the generated captions to the user.</p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>💻 Technical Skills</h2>
+                <h4>Languages</h4>
+                <ul class="skills-list">
+                    <li>Python</li><li>C++</li><li>JavaScript</li><li>SQL</li><li>Kotlin</li>
+                </ul>
+                
+                <h4>Web Development</h4>
+                <ul class="skills-list">
+                    <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React.js</li>
+                </ul>
+
+                <h4>Frameworks & Libraries</h4>
+                <ul class="skills-list">
+                    <li>Flutter</li><li>TensorFlow</li><li>Keras</li><li>PyTorch</li><li>Scikit-Learn</li>
+                </ul>
+
+                <h4>Tools & Platforms</h4>
+                <ul class="skills-list">
+                    <li>Android Studio</li><li>Git</li><li>MongoDB</li><li>Visual Studio</li><li>Jupyter</li>
+                </ul>
+
+                <h4>Core CS Topics</h4>
+                <ul class="skills-list">
+                    <li>Data Structures</li><li>Algorithms</li><li>OOP</li><li>Relational Databases</li><li>Complexity Analysis</li>
+                </ul>
+
+                 <h4>Soft Skills</h4>
+                <ul class="skills-list">
+                    <li>Critical thinking</li><li>Decision-making</li><li>Creativity</li><li>Emotional intelligence</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            </footer>
+
+    </div>
+
+</body>
+</html>
